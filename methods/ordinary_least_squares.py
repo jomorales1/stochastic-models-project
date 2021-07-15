@@ -1,5 +1,4 @@
-from utils import identity_matrix, copy_matrix, is_square_matrix, no_singular_matrix
-from utils import compare_matrices, multiply_matrices, transpose
+from utils import multiply_matrices, transpose, solve_equations
 
 
 class OrdinaryLeastSquares:
@@ -21,6 +20,6 @@ class OrdinaryLeastSquares:
         AT = transpose(X)
         ATA = multiply_matrices(AT, X)
         ATB = multiply_matrices(AT, Y)
-        coefs = self.__solve_equations(ATA, ATB, tol=tol)
+        coefs = solve_equations(ATA, ATB, tol=tol)
 
         return coefs

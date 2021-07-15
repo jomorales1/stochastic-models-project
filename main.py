@@ -1,16 +1,11 @@
-# This is a sample Python script.
-
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from methods.ordinary_least_squares import OrdinaryLeastSquares
+from methods.best_subset_bss import BestSubsetBSS
+from methods.ridge_regression import RidgeRegression
+from methods.least_angle_regression import LAR
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print('Regression Models')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
